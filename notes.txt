@@ -1,0 +1,83 @@
+GIT COMMANDS
+git hub is version control system.
+push - to copy the files and folders from local repo to remote repo
+pull is the opposite of push.
+
+push:
+ step1  listing the files and folders().
+ step2  create the commit object with necessary messages.
+ step3  push
+ 
+ each commit is a version.
+ its not necessary to push every commit, we can push multiple commits at a time.
+   
+our repo folder has these content:
+30 old(not modified) + 15 new (5 each in a sub folder, such 2 sub folders) + 2 del(5 to be ignored).
+
+git will list these:
+   10 new files 
+   2 deleted files (oly the name is copied not the content cz its deleted).
+   
+Brute  Force: Bubble sort, selection sort
+Decrease and Conquer: Insertion sort
+Tree Based Sorting: BBST sort, heap sort
+Combination of algorithms Sorting: Bucket Sort
+Non comparitive sorting :Radix Sort
+
+
+ 
+Bubble sort:
+
+77   34   55   45   9   13   22   35
+34   55   45   9    13  22   35   77 
+34   45   9    13   22  35   55   77
+
+n-1 + n-2 + n-3 .... 3+ 2+ 1
+O(n2)
+
+9  12  22  34  35  45  55  77
+9  12  22  34  35  45  55  77
+
+O(n2)
+
+Pseudocode:
+
+for i from 0 to n-2 do:
+    for j from 0 to n-2-i do:
+        if list[j] > list[j+1]:
+		    swap list[j], list[j+1]
+		
+			
+			
+BCE O(n2)
+WCE O(n2)
+
+
+Pseudocode:
+
+
+for i from 0 to n-2 do:
+    sorted = true # assume the list is sorted
+    for j from 0 to n-2-i do:
+        if list[j] > list[j+1]:
+		    swap list[j], list[j+1]
+			sorted = false
+	if sorted:
+	    break
+
+BCE O(n)
+WCE O(n2)
+
+
+Insertion Sort:
+
+77   34   55   45   9   13   22   35
+34   77 
+34   55   77  
+34   45   55   77
+9    34   45   55   77
+9    13   22   34   35  45   55   77
+
+
+
+for 
